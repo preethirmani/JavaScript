@@ -45,3 +45,32 @@ function longestWord(str) {
 const fox = 'The quick brown fox jumps over the lazy dog.';
 console.log(longestWord(fox));
 
+
+// Write a function remove that accepts an array and an element as an argument and removes the occurence of the element from the array
+//remove([1,3,5,6,2,3],3) => [1,5,6,2];
+function removeElement(arr, k) {
+  for(let i = 0; i < arr.length; i++) {
+    if(arr[i] === k) {
+      arr.splice(i, 1); //[1,5,6,2,3]
+      i--;
+    }
+  }
+  return arr;
+}
+console.log(removeElement([1,3,5,6,2,3],3))
+
+
+//// Write a function that takes an array of strings as an argument and returns an array of just words that have even length
+
+function printEvenWords(arr) {
+  let result = [];
+  for(let i = 0; i < arr.length; i++ ) {
+   
+    if( arr[i].length % 2 === 0) {
+      result.push(arr[i]);
+    }
+  }
+  return result;
+}
+
+console.log(printEvenWords(['The','bigblack','trunk','elephant', 'is', 'splashing', 'water', 'in', 'a', 'river', 'and', 'having', 'a', 'in', 'bigblack','bath.']));
