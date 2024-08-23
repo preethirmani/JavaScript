@@ -1,0 +1,1 @@
+//1.Write a function called average that takes an array of numbers as parameter and returns the average of those numbers
