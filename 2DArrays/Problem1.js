@@ -6,3 +6,10 @@ let MathScore = [
     ['Ben Liard', 16, 51, 'B']
 ];
 
+//console.log(MathScore[0]);
+//console.log(MathScore.length)
+for(let i = 0; i < MathScore.length; i++) {
+  for(let j = i; j < MathScore[i].length; j++) {
+    console.log(MathScore[i][j]);
+  }
+}
