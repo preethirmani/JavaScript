@@ -16,3 +16,9 @@ function selectionSort(a) {
 }
 
 console.log(selectionSort([5,4,6,3,7,1]))
+
+let numbers = [3,4,6,7]
+const filtered = numbers.filter(n => n > 10)
+console.log(filtered)
+
+
